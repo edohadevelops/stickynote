@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color:rgb(6, 91, 91);
+    padding: 0 min(50rem,150px) min(10rem,30px);
+
+}
+body h3{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: min(15rem,45px);
+    margin-bottom: min(10rem,30px);
+}
+#app{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,200px);
+    gap: min(8rem,24px);
+    padding: min(8rem,24px) min(12rem,40px);
+    place-content: center;
+}
+#app > textarea , button{
+    height: min(60rem,200px);
+    border-radius: min(5rem,15px);
+
+}
+#app > textarea{
+    padding: min(5rem,15px);
+    font-family: sans-serif;
+    line-height: min(6rem,20px);
+    resize: none;
+
+}
+textarea:focus{
+    outline:hidden;
+}
+#app > button{
+    background-color: rgba(28, 28, 28, 0.144);
+    color: rgb(20, 20, 20);
+    font-size: min(30rem,100px);
+    border: 0;
+    cursor: pointer;
+}
+#app > button:hover{
+    background-color: rgba(21, 21, 21, 0.297);
+    color: rgb(218, 218, 218);
+    transition: 0.3s;
+
+
+}
